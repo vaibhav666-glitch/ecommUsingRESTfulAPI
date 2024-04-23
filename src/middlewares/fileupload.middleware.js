@@ -7,8 +7,9 @@ const storage=multer.diskStorage({
         cb(null, './uploads/')
     }, 
     filename:(req, file, cb)=>{
-        cb(null, new Date().toISOString()+file.originalname)
+        cb(null, file.originalname)
     }
 })
 //configure storage inside multer
-export default upload=multer({storage: storage})
+
+export const upload=multer({storage: storage})

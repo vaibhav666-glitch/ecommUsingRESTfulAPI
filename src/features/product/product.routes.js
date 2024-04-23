@@ -3,6 +3,7 @@
 //1. Import express.
 import express from 'express';
 import ProductController from './product.controller.js';
+import {upload} from '../../middlewares/fileupload.middleware.js' 
 
 // 2. Initialize express router.
 const ProductRouter=express.Router();
@@ -11,7 +12,7 @@ const ProductRouter=express.Router();
 // localhost/api/products
 const productController=new ProductController();
 ProductRouter.get('/',productController.getAllProducts );
-ProductRouter.post('/', productController.addProduct);
-ProductRouter.get("/", productController.getOneProduct);
+ProductRouter.post('/',upload.single('imageUrl'),productController.addProduct);
+ProductRouter.get("/:id", productController.getOneProduct);
 
 export default ProductRouter
