@@ -17,8 +17,6 @@ export default class ProductController{
 
     }
 
-    rateProduct(req, res){}
-
     getOneProduct(req, res){
         const id=req.params.id;
         const product=ProductModel.get(id);
@@ -36,5 +34,18 @@ export default class ProductController{
         const category=req.query.category;
         const result= ProductModel.filter(minPrice,maxPrice,category);
         res.status(200).send(result);
+    }
+
+    rateProduct(req, res){
+        console.log(req.query);
+        const userID=req.query.userId;
+        const productID=req.query.productId;
+        const rating=req.query.rating;
+       const error=ProductModel.rateProduct(userID,productID,rating);
+        if(error)
+        {
+            return res.status(400).send(error);
+        }
+        return res.status(200).send("Rating has been added");
     }
 }
