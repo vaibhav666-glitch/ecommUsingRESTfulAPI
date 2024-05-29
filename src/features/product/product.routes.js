@@ -11,10 +11,10 @@ const ProductRouter=express.Router();
 // All the paths to controller methods.
 // localhost/api/products
 const productController=new ProductController();
-ProductRouter.post('/rate',productController.rateProduct);
-ProductRouter.get("/filter", productController.filterProducts)
-ProductRouter.get('/',productController.getAllProducts );
-ProductRouter.post('/',upload.single('imageUrl'),productController.addProduct);
-ProductRouter.get("/:id", productController.getOneProduct);
+ProductRouter.post('/rate',(req,res)=>{productController.rateProduct(req,res)});
+ProductRouter.get("/filter", (req,res)=>{productController.filterProducts(req,res)});
+ProductRouter.get('/',(req,res)=>{productController.getAllProducts(req,res)});
+ProductRouter.post('/',upload.single('imageUrl'),(req,res)=>{productController.addProduct(req,res)});
+ProductRouter.get("/:id",(req,res)=>{productController.getOneProduct(req,res)});
 
 export default ProductRouter

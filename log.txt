@@ -30,3 +30,38 @@
 {"level":"info","message":"/api/products/rate?userId=14&productId=1&rating=4 - {\"email\":\"seller@ecom.com\",\"password\":\"password1\"}","service":"request-logging"}
 {"level":"info","message":"/api/products/rate?userId=14&productId=1&rating=4 - {\"email\":\"seller@ecom.com\",\"password\":\"password1\"}","service":"request-logging"}
 {"level":"info","message":"/api/products/rate?userId=14&productId=1&rating=4 - {\"email\":\"seller@ecom.com\",\"password\":\"password1\"}","service":"request-logging"}
+{"level":"info","message":"/api/users/signup - {\"email\":\"seller@ecom.com\",\"password\":\"password1\",\"name\":\"seller user\",\"type\":\"seller\"}","service":"request-logging"}
+{"level":"info","message":"/api/users/signup - {\"email\":\"seller@ecomk.com\",\"password\":\"password1\",\"name\":\"seller user\",\"type\":\"seller\"}","service":"request-logging"}
+{"level":"info","message":"/api/users/signup - {\"email\":\"seller@ecomk.com\",\"password\":\"password1\",\"name\":\"seller user\",\"type\":\"seller\"}","service":"request-logging"}
+{"level":"info","message":"/api/users/signup - {\"email\":\"seller@ecomk.com\",\"password\":\"password1\",\"name\":\"seller user\",\"type\":\"seller\"}","service":"request-logging"}
+{"level":"info","message":"/api/users/signup - {\"email\":\"seller@ecomk.com\",\"password\":\"password1\",\"name\":\"seller user\",\"type\":\"sellersss\"}","service":"request-logging"}
+{"level":"info","message":"/api/users/signup - {\"email\":\"seller@ecom.com\",\"password\":\"password1\"}","service":"request-logging"}
+{"level":"info","message":"/api/users/signup - {\"email\":\"seller@ecom.com\",\"password\":\"password2\"}","service":"request-logging"}
+{"level":"info","message":"/api/users/signup - {\"email\":\"seller@ecom.com\",\"password\":\"password2\",\"name\":\"seller user 4\",\"type\":\"seller\"}","service":"request-logging"}
+{"level":"info","message":"/api/users/signup - {\"email\":\"seller@ecom.com\",\"password\":\"password2\",\"name\":\"seller user 4\",\"type\":\"seller\"}","service":"request-logging"}
+{"level":"info","message":"/api/users/signup - {\"email\":\"seller@ecom.com\",\"password\":\"password2\"}","service":"request-logging"}
+{"level":"info","message":"/api/users/signup - {\"email\":\"seller@ecom.com\",\"password\":\"password2\"}","service":"request-logging"}
+{"level":"info","message":"/api/users/signup - {\"email\":\"seller@ecom.com\",\"password\":\"password5\"}","service":"request-logging"}
+{"level":"info","message":"/api/users/signup - {\"email\":\"seller@ecom.com\",\"password\":\"password5\"}","service":"request-logging"}
+{"level":"info","message":"/api/users/signup - {\"email\":\"seller@ecom.com\",\"password\":\"password5\"}","service":"request-logging"}
+{"level":"info","message":"/api/products - {\"name\":\"Product 1\",\"price\":19,\"imageUrl\":\"https://m.media-amazon.com/images/I/51-nXsSRfZL._SX328_BO1,204,203,200_.jpg\",\"sizes\":\"['M', 'XL', 'S']\"}","service":"request-logging"}
+{"level":"info","message":"/api/products - {\"name\":\"Product 1\",\"price\":19,\"imageUrl\":\"https://m.media-amazon.com/images/I/51-nXsSRfZL._SX328_BO1,204,203,200_.jpg\",\"sizes\":\"['M', 'XL', 'S']\"}","service":"request-logging"}
+{"level":"info","message":"/api/products - {\"name\":\"Product 1\",\"price\":19,\"imageUrl\":\"https://m.media-amazon.com/images/I/51-nXsSRfZL._SX328_BO1,204,203,200_.jpg\",\"sizes\":\"['M', 'XL', 'S']\"}","service":"request-logging"}
+{"level":"info","message":"/api/products - {\"name\":\"Product 1\",\"price\":19,\"imageUrl\":\"https://m.media-amazon.com/images/I/51-nXsSRfZL._SX328_BO1,204,203,200_.jpg\",\"sizes\":\"['M', 'XL', 'S']\"}","service":"request-logging"}
+{"level":"info","message":"/api/products - {\"name\":\"Product 1\",\"price\":19,\"imageUrl\":\"https://m.media-amazon.com/images/I/51-nXsSRfZL._SX328_BO1,204,203,200_.jpg\",\"sizes\":\"['M', 'XL', 'S']\"}","service":"request-logging"}
+{"level":"info","message":"/api/products - {\"name\":\"Product 1\",\"price\":19,\"imageUrl\":\"https://m.media-amazon.com/images/I/51-nXsSRfZL._SX328_BO1,204,203,200_.jpg\",\"sizes\":\"['M', 'XL', 'S']\"}","service":"request-logging"}
+{"level":"info","message":"/api/products - {\"name\":\"Product 1\",\"price\":19,\"imageUrl\":\"https://m.media-amazon.com/images/I/51-nXsSRfZL._SX328_BO1,204,203,200_.jpg\",\"sizes\":\"['M', 'XL', 'S']\"}","service":"request-logging"}
+{"level":"info","message":"/api/products - {\"name\":\"Product 1\",\"price\":19,\"imageUrl\":\"https://m.media-amazon.com/images/I/51-nXsSRfZL._SX328_BO1,204,203,200_.jpg\",\"sizes\":\"['M', 'XL', 'S']\"}","service":"request-logging"}
+{"level":"info","message":"/api/products - {\"name\":\"Product 1\",\"price\":19,\"imageUrl\":\"https://m.media-amazon.com/images/I/51-nXsSRfZL._SX328_BO1,204,203,200_.jpg\",\"sizes\":\"['M', 'XL', 'S']\"}","service":"request-logging"}
+{"level":"info","message":"/api/products - {\"name\":\"Product 1\",\"price\":19,\"imageUrl\":\"https://m.media-amazon.com/images/I/51-nXsSRfZL._SX328_BO1,204,203,200_.jpg\",\"sizes\":\"['M', 'XL', 'S']\"}","service":"request-logging"}
+{"level":"info","message":"/api/products - {\"name\":\"Product 1\",\"price\":19,\"imageUrl\":\"https://m.media-amazon.com/images/I/51-nXsSRfZL._SX328_BO1,204,203,200_.jpg\",\"sizes\":\"['M', 'XL', 'S']\"}","service":"request-logging"}
+{"level":"info","message":"/api/products - {\"name\":\"Product 1\",\"price\":19,\"imageUrl\":\"https://m.media-amazon.com/images/I/51-nXsSRfZL._SX328_BO1,204,203,200_.jpg\",\"sizes\":\"['M', 'XL', 'S']\"}","service":"request-logging"}
+{"level":"info","message":"/api/products - {\"name\":\"Product 1\",\"price\":19,\"imageUrl\":\"https://m.media-amazon.com/images/I/51-nXsSRfZL._SX328_BO1,204,203,200_.jpg\",\"sizes\":\"['M', 'XL', 'S']\"}","service":"request-logging"}
+{"level":"info","message":"/api/products - {\"name\":\"Product 1\",\"price\":19,\"imageUrl\":\"https://m.media-amazon.com/images/I/51-nXsSRfZL._SX328_BO1,204,203,200_.jpg\",\"sizes\":\"['M', 'XL', 'S']\"}","service":"request-logging"}
+{"level":"info","message":"/api/products - {\"name\":\"Product 1\",\"price\":19,\"imageUrl\":\"https://m.media-amazon.com/images/I/51-nXsSRfZL._SX328_BO1,204,203,200_.jpg\",\"sizes\":\"['M', 'XL', 'S']\"}","service":"request-logging"}
+{"level":"info","message":"/api/products - {\"name\":\"Product 1\",\"price\":19,\"imageUrl\":\"https://m.media-amazon.com/images/I/51-nXsSRf._SX328_BO1204,203,200_.jpg\",\"sizes\":\"['M', 'XL', 'S']\"}","service":"request-logging"}
+{"level":"info","message":"/api/products - {\"name\":\"Product 1\",\"price\":19,\"imageUrl\":\"https://m.media-amazon.com/images/I/51-nXsSRf._SX328_BO1204,203,200_.jpg\",\"sizes\":\"['M', 'XL', 'S']\"}","service":"request-logging"}
+{"level":"info","message":"/api/products - {\"name\":\"Product 1\",\"price\":19,\"imageUrl\":\"https://m.media-amazon.com/images/I/51-nXsSRf._SX328_BO1204,203,200_.jpg\",\"sizes\":\"['M', 'XL', 'S']\"}","service":"request-logging"}
+{"level":"info","message":"/api/products - {\"name\":\"Product 1\",\"price\":19,\"imageUrl\":\"https://m.media-amazon.com/images/I/51-nXsSRf._SX328_BO1204,203,200_.jpg\",\"sizes\":\"['M', 'XL', 'S']\"}","service":"request-logging"}
+{"level":"info","message":"/api/products - {\"name\":\"Product 1\",\"price\":19,\"imageUrl\":\"https://m.media-amazon.com/images/I/51-nXsSRf._SX328_BO1204,203,200_.jpg\",\"sizes\":\"['M', 'XL', 'S']\"}","service":"request-logging"}
+{"level":"info","message":"/api/products - {\"name\":\"Product 1\",\"price\":19,\"imageUrl\":\"https://m.media-amazon.com/images/I/51-nXsSRf._SX328_BO1204,203,200_.jpg\",\"sizes\":\"['M', 'XL', 'S']\"}","service":"request-logging"}

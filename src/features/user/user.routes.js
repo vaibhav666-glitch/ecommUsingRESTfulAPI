@@ -11,8 +11,12 @@ const userRouter=express.Router();
 // All the paths to controller methods.
 // localhost/api/products
 const userController=new UserController();
-userRouter.post("/signup", userController.signUp)
+userRouter.post("/signup", (req, res)=>{
+    userController.signUp(req,res)
+})
 
-userRouter.post("/signin", userController.signIn);
+userRouter.post("/signin", (req,res)=>{
+    userController.signIn(req,res)
+})
 
 export default userRouter

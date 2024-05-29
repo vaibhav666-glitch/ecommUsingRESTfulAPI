@@ -1,7 +1,10 @@
+//import { MongoClient } from "mongodb";
+
 //1. Import Express
 import express from "express";
 import apiDocs from "./swagger.json" assert {type:'json'};
 import swagger from 'swagger-ui-express';
+
 import  ProductRouter from "./src/features/product/product.routes.js";
 import userRouter from "./src/features/user/user.routes.js";
 //import basicAuthorizer from "./src/middlewares/basicAuth.middlewear.js";
@@ -11,10 +14,11 @@ import jwtAuth from "./src/middlewares/jwt.middleware.js";
 import cartRouter from "./src/features/cart/cartItems.routes.js";
 import loggerMiddleWAre from "./src/middlewares/logger.middlewear.js";
 import { ApplicationError } from "./src/error-handler/applicationError.js";
+import {connectToMongoDB} from "./src/config/mongodb.js";
 //2. create server
 
 const server=express();
-
+// load all environment variables in user
 // cors policy configuration
 
 // server.use((req, res, next)=>{
@@ -74,4 +78,5 @@ server.use((err, req, res, next)=>{
 
 server.listen(3200, () => {
     console.log("server is listening on 3200");
+    connectToMongoDB();
   });
