@@ -47,15 +47,31 @@ class ProductRepository{
             const collection=db.collection("products");
             let filterExpression={};
             if(minPrice){
-                filterExpression.price={$gte:minPrice};
+                filterExpression.price={$gte:parseFloat(minPrice)};
             }
+            if(maxPrice){
+                filterExpression.price={...filterExpression, $lte:parseFloat(maxPrice)};
+            }
+            if(category){
+                filterExpression.category=category;
+            }
+           return await collection.find(filterExpression).toArray();
         }
         catch(err){
             console.log(err);
             throw new ApplicationError("something went wrong with the dataBase")
         }
     }
-    async rateProduct(){
+    async rateProduct(uderID,productID,rating){
+        try{
+            const db=getDB();
+            const collection=db.collection("products");
+
+        }
+        catch(err){
+            console.log(err);
+            throw new ApplicationError("something went wrong with the dataBase")
+        }
 
     }
 }
