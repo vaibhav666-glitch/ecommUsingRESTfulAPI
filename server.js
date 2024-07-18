@@ -1,4 +1,3 @@
-//import { MongoClient } from "mongodb";
 
 //1. Import Express
 import express from "express";
@@ -7,14 +6,15 @@ import swagger from 'swagger-ui-express';
 
 import  ProductRouter from "./src/features/product/product.routes.js";
 import userRouter from "./src/features/user/user.routes.js";
-//import basicAuthorizer from "./src/middlewares/basicAuth.middlewear.js";
+
 import cors from 'cors'
 import  bodyParser from 'body-parser'
 import jwtAuth from "./src/middlewares/jwt.middleware.js";
 import cartRouter from "./src/features/cart/cartItems.routes.js";
 import loggerMiddleWAre from "./src/middlewares/logger.middlewear.js";
 import { ApplicationError } from "./src/error-handler/applicationError.js";
-import {connectToMongoDB} from "./src/config/mongodb.js";
+
+import { connectUsingMongoose } from "./src/config/mongooseConfig.js";
 //2. create server
 
 const server=express();
@@ -56,11 +56,7 @@ server.use((req, res)=>{
     
 
 
-//3. Default request handler
 
-server.get("/", (req,res)=>{
-    res.send("Welcome to Ecommerce APIs");
-})
 
 // Error handler middleware
 server.use((err, req, res, next)=>{
@@ -78,5 +74,5 @@ server.use((err, req, res, next)=>{
 
 server.listen(3200, () => {
     console.log("server is listening on 3200");
-    connectToMongoDB();
-  });
+    connectUsingMongoose()
+  }); 

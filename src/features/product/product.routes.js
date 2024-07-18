@@ -13,8 +13,9 @@ const ProductRouter=express.Router();
 const productController=new ProductController();
 ProductRouter.post('/rate',(req,res)=>{productController.rateProduct(req,res)});
 ProductRouter.get("/filter", (req,res)=>{productController.filterProducts(req,res)});
+ProductRouter.get("/id",(req,res)=>{productController.getOneProduct(req,res)});
 ProductRouter.get('/',(req,res)=>{productController.getAllProducts(req,res)});
 ProductRouter.post('/',upload.single('imageUrl'),(req,res)=>{productController.addProduct(req,res)});
-ProductRouter.get("/:id",(req,res)=>{productController.getOneProduct(req,res)});
+
 
 export default ProductRouter

@@ -1,4 +1,4 @@
-import ProductModel from "./product.model.js";
+
 import ProductRepository from "./product.repository.js";
 export default class ProductController{
 
@@ -16,17 +16,8 @@ export default class ProductController{
 
     async addProduct(req, res){
         try{
-           
-
-        const {name,price,sizes,}=req.body;
-        console.log(name,+" "+price,+" "+sizes);
-        const newProduct= new ProductModel(name,null,parseFloat(price),req.file.filename,null,sizes.split(","));
-       
-       
-        console.log(newProduct)
-    
-        const createdRecord= await this.productRepository.add(newProduct);
-        console.log(createdRecord)
+        const createdRecord= await this.productRepository.add(req.body);
+        //console.log(createdRecord)
         res.status(201).send(createdRecord)
         }
     catch(err){
@@ -37,7 +28,8 @@ export default class ProductController{
 
     async getOneProduct(req, res){
         try{
-        const id=req.params.id;
+           
+        const id=req.query._id;
         const product=await this.productRepository.get(id);
         return res.status(200).send(product);
         
@@ -65,12 +57,12 @@ export default class ProductController{
 
   async rateProduct(req, res){
         console.log(req.query);
-        const userID=req.query.userId;
-        const productID=req.query.productId;
+        const userID=req.query.userID;
+        const productID=req.query.productID;
         const rating=req.query.rating;
        try{
-        ProductModel.rateProduct(userID,productID,rating);}
-
+      await this.productRepository.rateProduct(userID,productID,rating);}
+        
         catch(err){
             return res.status(400).send(err.message);
         }

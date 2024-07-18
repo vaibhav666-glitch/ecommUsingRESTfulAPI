@@ -6,7 +6,7 @@ import mongoose from "mongoose"
 
  export const connectUsingMongoose=async()=>{
     try{
-        await mongoose.connect(url,{useNewUrlParse:true,useUnifiedTopology:true})
+        await mongoose.connect(url)
         console.log("mongoDb using mongoose is connected");
     }
     catch(err){

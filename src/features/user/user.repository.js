@@ -1,47 +1,53 @@
-import { getDB } from "../../config/mongodb.js";
+import mongoose from "mongoose";
+
+import { userSchema } from "./user.schema.js";
 import { ApplicationError } from "../../error-handler/applicationError.js";
 
-class UserRespository{
+const userModel= mongoose.model('User', userSchema)
 
-     async SignUp(newUser)
-    {
-        try{
-
-        //1. Get the database
-        const db=getDB();
-        //2. get the collection
-      const collection=db.collection("users");
-      //3. Insert the component
-   await   collection.insertOne(newUser);
-   return newUser;
-    }
+export default class UserRepository{
+    async signUp(user){
+    try{
+        const newUser=new userModel(user);
+        await newUser.save();
+        return newUser;
+        }
     catch(err){
         console.log(err);
-        throw new ApplicationError("something went wrong with database", 500)
+        throw new ApplicationError("Error while creating user", 500)
+        }
     }
-        
-    }
-
 
     async findByEmail(email)
     {
         try{
-
-        //1. Get the database
-        const db=getDB();
-        //2. get the collection
-      const collection=db.collection("users");
-      //3. Insert the component
-   return await  collection.findOne({email});
-   
-    }
-    catch(err){
-        console.log(err);
-        throw new ApplicationError("something went wrong with database", 500)
-    }
-        
+            const user=await userModel.findOne({email:email})
+            return user;
+        }
+        catch(err){
+            console.log(err);
+            throw new ApplicationError("Error while signing in", 500)
+        }
     }
 
+    async resetPassword(userId,newPassword)
+    {
+        try{
+            const user=await userModel.findById(userId);
+            if(user)
+            {
+                user.password=newPassword;
+                user.save();
+            }
+            else{
+                throw new ApplicationError("User not found", 404);
+            }
+        }
+        catch(err){
+            console.log(err);
+            throw new ApplicationError("Error while resetting password", 500)
+        }
+
+    }
 
 }
-export default UserRespository;
