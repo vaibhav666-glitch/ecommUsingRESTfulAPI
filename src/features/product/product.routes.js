@@ -18,4 +18,5 @@ ProductRouter.get('/',(req,res)=>{productController.getAllProducts(req,res)});
 ProductRouter.post('/',upload.single('imageUrl'),(req,res)=>{productController.addProduct(req,res)});
 
 
+
 export default ProductRouter

@@ -12,7 +12,7 @@ export default class ProductRepository{
 
     async add(newProduct){
         try{
-            const product= await new productModel(newProduct);
+            const product=  new productModel(newProduct);
            await product.save();
             console.log(product);
           for(let i=0;i<product.category.length;i++)
